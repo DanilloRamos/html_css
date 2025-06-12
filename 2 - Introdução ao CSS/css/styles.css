@@ -1,0 +1,24 @@
+/*Maneiras de adicionar CSS
+Inline: estilos adicionados por atributos
+Internal: css é adicionado na tag head
+External: css é adicionado por arquivo externo e importado no HTML*/
+
+/*Anatomia do CSS
+- Selecionar o elemento por meio de sua tag
+- Após isso, adicionar propriedades e valores
+        color: red;
+        propriedade: valor;
+- Podem ser adicionadas múltiplas regras de CSS, que podem ser 
+separadas por ponto e vírgula*/
+
+body {
+        padding-bottom: 500px; /*espaçamento inferior da página*/
+}
+
+h3 {
+        color:green;
+}
+
+p {
+        color: blueviolet;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+     <!--Internal CSS
+    Todos os estilos na tag head
+    Regras precisam estar entre a tag style
+    É necessário selecionar o elemento alvo-->
+    <style>
+        p {
+            color: gold;
+            font-size: 40px;
+        }
+    </style>
+
+    <!--External CSS-->
+    <!--Cascading Style Sheet-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lists.css">
+</head>
+<body>
+    <!--Inline CSS
+    CSS é adicionado na tag head
+    Anatomia do CSS
+        - Selecionar o elemento por meio de sua tag
+        - Após isso, adicionar propriedades e valores
+                color: red;
+                propriedade: valor;
+        - Podem ser adicionadas múltiplas regras de CSS, que podem ser 
+        separadas por ponto e vírgula-->
+    <h1 style="color:red">Mudar cor com Inline</h1>
+    <h1 style="color:blue">Outro título com Inline</h1>
+
+    <!--Múltiplas regras de CSS-->
+    <h1 style="color: purple; font-size: 40px; border-bottom: 1px solid red">Mudar cor e tamanho da fonte</h1>
+
+    <!--Internal CSS-->
+    <p>Eu fui estilizado pelo Internal CSS</p>
+    <p>Eu também</p>
+
+    <!--External CSS-->
+    <h3>Título verde</h3>
+
+    <!--Ordem do CSS
+    Iline tem prioridade sobre o Internal e o External
+    Internal tem a mesma prioridade que o External
+    Todos prevalecem sobre o padrão do navegador-->
+    <p style="color: red">Ordem do CSS</p> <!--Inline prevalece sobre o internal que define a cor como gold-->
+    <p>Ordem do CSS 2</p>
+
+    <!--É possível ter múltiplos arquivos de CSS
+    Os arquivos importados por último têm mais prioridade-->
+    <ul>
+        <li>Banana</li>
+        <li>Maçã</li>
+        <li>Abacate</li>
+    </ul>
+
+    <!--Classes e ids
+        - São atributos do HTML, mas estão diretamente relacionados ao CSS
+            ids -> elementos únicos
+            classes -> um ou mais elementos-->
+</body>
+</html>
