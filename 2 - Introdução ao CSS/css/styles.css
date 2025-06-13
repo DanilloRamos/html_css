@@ -19,6 +19,102 @@ h3 {
         color:green;
 }
 
-p {
+/*p {
         color: blueviolet;
+}*/
+p {
+        font-size: 50px;
+}
+
+/*Classes*/
+.paragraph {
+        background-color: #000;
+        color: aqua;
+        padding: 5px;
+}
+
+/*ids*/
+#exclusive-title {
+        background-color: purple;
+        color: yellow;
+        padding: 10px;
+}
+
+/*Aprofundando em HEX*/
+.simple-hex {
+        color: #333;        
+}
+
+.simple-hex-2 {
+        color: #a5f;
+}
+
+/*RGB*/
+.rgb {
+        color: rgb(255,0,0);
+}
+
+.mixed-rgb{
+        color: rgb(75,87,99);
+}
+
+/*RGBa*/
+.rgba {
+        color: rgba(100, 199, 45, 0.3);
+}
+
+/*HSL*/
+.hsl {
+        color: hsl(100, 20%, 50%);
+}
+
+.hsl-2 {
+        color: hsl(201, 49%, 69%);
+}
+
+/*BG*/
+.bg {
+        background-color: #000;
+        color: yellow;
+}
+
+.bg-2 {
+        background-color: rgb(200,20,40);
+        color: #00eaff;
+}
+
+/*BG Opacity*/
+.bg-opacity {
+        background-color: green;
+        opacity: .2;
+}
+.bg-opacity-2 {
+        background-color: #999;
+        color: #000;
+        opacity: .8;
+}
+
+/*RGBa com Opacity*/
+.rgba-opacity{
+        background-color: rgba(80, 120, 20, 0.2);
+        color: #000;
+}
+
+/*BG Image*/
+.bg-image{
+        background-image: url('../img/nature.jpg');
+        color: #fff;
+        padding: 10px;
+}
+
+/*Centralizando bg image*/
+.not-centered-bg, .centered-bg{
+        height: 400px;
+        width: 400px;
+        background-image: url(../img/bridge.jpg);
+}
+
+.centered-bg{
+        background-position: center;
+        background-size: cover;
 }

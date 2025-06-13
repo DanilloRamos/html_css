@@ -9,10 +9,10 @@
     Regras precisam estar entre a tag style
     É necessário selecionar o elemento alvo-->
     <style>
-        p {
+        /* p {
             color: gold;
             font-size: 40px;
-        }
+        } */
     </style>
 
     <!--External CSS-->
@@ -63,5 +63,84 @@
             ids -> elementos únicos
             classes -> um ou mais elementos-->
     <!--Testando-->
+    <p class="paragraph">Algum texto</p>
+    <p class="paragraph">Algum texto 2</p>
+    <p class="paragraph">Algum texto 3</p>
+
+    <!--Ids-->
+    <h1 id="exclusive-title">Este é um título com id</h1>
+
+    <!--Aprofundando em HEX
+    Se um valor for repetido 6x, pode ser resumido
+        #FFFFFF = #FFF
+    Técnica muito utilizada-->
+    <p class="simple-hex">Hex Simplificado</p>
+    <p class="simple-hex-2">Hex Simplificado 2</p>
+
+    <!--RGB
+    Precisa inserir a intensidade, com valores de 0 a 255
+    0 é o mais escuro, 255 o mais claro
+    Sintaxe: rgb(0-255,0-255,0-255)-->
+    <p class="rgb">Este foi estilizado com RGB</p>
+    <p class="mixed-rgb">Este também foi estilizado com RGB</p>
+    
+    <!--RGBa
+    Valores possíveis vão de 0 a 1 (alpha)
+    Sintaxe: rgba(0-255, 0-255, 0-255, 0-1)
+    0 -> transparente
+    1 -> totalmente visível-->
+
+    <p class="rgba">Este foi estilizado com RGBa</p>
+
+    <!--HSL
+    Hue, Saturation, Lightness
+    Sintaxe: hsl(0-255,0-100%, 0-100%)-->
+    <p class="hsl">Este foi estilizado com HSL</p>    
+    <p class="hsl-2">Este também foi estilizado com HSL</p>
+
+    <!--Background Color
+    Cor de fundo
+    Sintaxe: background-color: cor;
+    Regras de cor de funco e cor de fonte podem ser utilizadas juntas-->
+    <p class="bg">Mude o meu background</p>
+    <h2 class="bg-2">Mude também o meu background</h2>
+
+    <!--Background Opacity
+    Valores vão de 0 a 1-->
+    <div class="bg-opacity">
+        <p>Estou aqui!</p>
+    </div>
+    <div class="bg-opacity-2">
+        <p>Estou aqui quase visível!</p>
+    </div>
+
+    <!--RGBa com Opacity
+    Altera somente o bg, com o alpha-->
+    <div class="rgba-opacity">
+        <h1>Este título precisa estar visível</h1>
+    </div>
+
+    <!--Background Images
+    Sintaxe: background-image:url('pasta/imagem.jpg')-->
+    <h1 class="bg-image">Este título tem uma imagem!</h1>
+
+    <!--Centralizando a imagem de BG
+    background-position: valor_de_center;
+    background-size: valor_de_cobertura;
+    -->
+    <div class="not-centered-bg">
+
+    </div>
+    <div class="centered-bg">
+
+    </div>
+
+    <!--Box Model
+    Entidade criada em todo elemento HTML
+    Quatro partes: Altura e largura, padding, border e margin
+    Todas as partes podem ser alteradas por CSS
+    Alguns elementos HTML já vem com valor nestas regras
+    Padding: espaçamento interno do elemento
+    Margin: distância entre elementos-->
 </body>
 </html>
