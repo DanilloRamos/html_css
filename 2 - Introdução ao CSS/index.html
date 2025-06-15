@@ -142,5 +142,160 @@
     Alguns elementos HTML já vem com valor nestas regras
     Padding: espaçamento interno do elemento
     Margin: distância entre elementos-->
+
+    <!--Altura e Largura (height and width)
+    Core do box model
+    consistem no conteúdo do elemento
+    As duas podem ser alteradas
+    os block elements já vem com 100% de largura,
+    preenchendo toda a tela na horizontal-->
+    <div class="heigth-width"></div>
+    <div class="heigth-width-2"></div>
+
+    <!--Padding
+    Espaçamento interno, entre a borda do elemento e o conteúdo
+    Distância entre o conteúdo e a extremidade do elemento-->
+    <div class="without-padding">Esse não tem padding</div>
+    <div class="padding">Esse tem padding</div>
+
+    <!--Padding individual
+    O padding pode ser adicionado aos lados individuais de um elemento
+    Sintaxe padding-*
+    padding-top, padding-bottom, padding-left, padding-right-->
+    <p class="padding-individual">Este elemento tem paddings diferentes</p>
+
+    <!--Shorthand Properties
+    Permite adicionad padding a todas as direções com uma regra
+    top, right, bottom, left, nessa ordem
+    padding: 10px 5px 12px 20px
+    Essa regra pode ser aplicada a outras propriedades-->
+    <p class="shorthand-padding">Algum texto</p>
+    <p class="shorthand-padding-2">Algum outro texto</p>
+
+    <!--Padding e width
+    box-sizing e border-box-->
+    <div class="without-border-box">
+        <p>Algum conteúdo aqui</p>
+    </div>
+    <div class="border-box">
+        <p>Algum conteúdo aqui também</p>
+    </div>
+
+    <!--Border
+    Elemento central, entre o padding e a margin
+    Regra utilizada com propósito decorativo
+    Definida em partes: tamanho, aspecto, cor da borda-->
+    <div class="border">Borda</div>
+    <div class="border-2">Borda 2</div>
+
+    <!--Bordas em lados individuais
+    border-top, border-left, border-right, border-bottom-->
+    <p class="border-left">Borda na esquerda</p>
+    <p class="border-bottom">Borda embaixo</p>
+
+    <!--borda arredondada
+    border-radius
+    Sintaxe: border-radius: 5px;
+    Elementos que não tem regra de borda aplicada também podem
+    ser arredondados-->
+    <div class="rounded-p">Eu estou arredondado</div>
+    <div class="rounded-p-2">Eu também estou arredondado</div>
+
+    <!--Margin
+    Responsável pelo espaçamento externo do elemento
+    Podem haver lados individuais, como o padding-->
+    <div class="margin">Eu tenho margem</div>
+    <div class="margin-top">Eu tenho margem no topo</div>
+    <div class="margin-shorthand">Eu tenho margem em todos os lados (shorthand)</div>
+
+    <!--Unindo conceitos de box-model-->
+    <div class="box-model">
+        <p>Tenho todas as propriedades do box-model</p>
+    </div>
+
+    <!--Alinhamento de texto
+    Por padrão, o texto é alinhado à esquerda
+    Sintaxe: text-align: center;-->
+    <p class="text-align">Alinhado à direita</p>
+    <div class="container-center">
+        <h2>Estamos centralizados</h2>
+        <p>Algum texto</p>
+    </div>
+
+    <!--Text Decoration
+    Possibilidade de adicionar efeitos ao texto
+    Regra utilizada em casos específicos
+    Tag a tem underline por padrão, mas pode ser removido por
+    text-decoration: none;-->
+    <p class="underline">Eu tenho uma underline</p>
+    <p class="line-trough">Eu tenho um risco</p>
+    <a href="#" class="remove-underline">Sem underline</a>
+
+    <!--Text Transform
+    Altera como o texto é exibido
+    Lower Case ou Upper Case
+    Não há muitos valores para a regra-->
+    <p class="upper">Este texto é em caixa alta</p>
+    <p class="lower">Este é em caixa baixa</p>
+
+    <!--Espaçamento entre letras
+    letter-spacing
+    Sintaxe: letter-spacing: 5px;-->
+    <h2 class="spacing">Eu tenho um espaçamento maior</h2>
+
+    <!--Fontes
+    O tipo da fonte pode ser alterado
+    Serif, Sans-serif, Monospace, Cursive, Fantasy (disponíveis)
+    Fontes externas podem ser adicionadas, como o Google Fonts
+    -->
+    <p class="serif">Serif Font</p>
+    <p class="sans-serif">Sans-Serif Font</p>
+    <p class="monospace">Monospace</p>
+    <p class="cursive">Cursive</p>
+    <p class="fantasy">Fantasy Font</p>
+
+    <!--Estilo de Fonte
+    Propriedade font-style para mudar o estilo da fonte
+    normal, italic, oblique-->
+    <p class="italic">Eu estou em itálico</p>
+    <p class="oblique">Eu estou em oblíquo</p>
+
+    <!--Font weigth
+    Deixa a fonte mais fina ou mais grossa
+    Os valores vão de 100 a 900,
+    Sendo 100 a mais fina e 900 a mais grossa
+    Algumas palavras funcionam como valores, como bold
+    Algumas fontes não têm todas as variações-->
+    <p class="thin">Eu sou mais fina</p>
+    <p class="bold">Eu estou em bold</p>
+    <p class="bolder">Eu sou a maior fonte</p>
+
+    <!--Font Size
+    Responsável por deixar a fonte grande ou pequena
+    Configurada com unidades de medida, como o px-->
+    <h4 class="small">Título pequeno</h4>
+    <h4 class="big">Título grande</h4>
+
+    <!--Display
+    Alguns elementos são considerados de bloco e outros inline
+    A regra display muda esse comportamento
+    Block: ocupa a linha toda
+    Inline: ficam lado a lado-->
+    <div class="inline-box">a</div>
+    <div class="inline-box">b</div>
+    <div class="inline-box">c</div>
+    <span class="block">Teste</span>
+    <span class="block">Teste 2</span>
+
+    <!--Escondendo elemento
+    Display com valor de none
+    O elemento não é exibido, porém ainda está no HTML-->
+    <p class="invisible">Me encontre se puder!</p>
+
+    <!--Posições dos elementos
+    Regra position
+    relative, fixed, absolute, stick, etc...
+    Valor padrão: static-->
+    <!--Position static-->
 </body>
 </html>
