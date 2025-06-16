@@ -374,3 +374,132 @@ p {
 .invisible{
         display: none;
 }
+
+/*Static*/
+.static{
+        position: static;
+        background-color: #391;
+        color: #fff;
+        width: 100px;
+        height: 100px;
+}
+
+/*Relative*/
+.relative {
+        position: relative;
+        background-color: #224;
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        left: 40px;
+}
+
+/*Absolute*/
+.absolute {
+        position: absolute;
+        background-color: #823;
+        color: #fff;
+        width: 100px;
+        height: 100px;
+        top: 2px;
+        right: 2px;
+}
+
+/*Absolute e Relative*/
+.relative-container{
+        width: 300px;
+        height: 300px;
+        border: 1px solid red;
+        margin-top: 120px;
+        position: relative;
+}
+
+.absolute-1, .absolute-2{
+        width: 50px;
+        height: 50px;
+        background-color: #422;
+        position: absolute;
+}
+
+.absolute-1{
+        top: 10px;
+        left: 10px;
+}
+
+.absolute-2{
+        bottom: 10px;
+        right: 10px;
+}
+
+/*Fixed*/
+.fixed{
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+        background-color: #851;
+        position: fixed;
+        top: 50px;
+        right: 100px;
+}
+
+/*sticky*/
+.sticky{
+        width: 100px;
+        height: 100px;
+        border: 1px solid green;
+        background-color: #994;
+        position: sticky;
+        top: 10px;
+}
+
+.absolute-3, .absolute-4, .absolute-5 {
+        width: 50px;
+        height: 50px;
+        background-color: #123;
+        position: absolute;
+}
+
+.absolute-3{
+        top: 0;
+        left: 0;
+        z-index: 3;
+}
+
+.absolute-4 {
+        top: 10px;
+        left: 10px;
+        background-color: #246;
+        z-index: 20;
+}
+
+.absolute-5 {
+        top: 20px;
+        left: 20px;
+        background-color: #453;
+        z-index: 1;
+}
+
+/*Avulso*/
+.div-1, .div-2, .div-3, .div-4, .div-5{
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        padding-top: 10px;
+}
+
+.div-1{
+        background-color: #111;
+}
+.div-2{
+        background-color: #222;
+}
+.div-3{
+        background-color: #333;
+}
+.div-4{
+        background-color: #444;
+}
+.div-5{
+        background-color: #555;
+}

@@ -43,6 +43,14 @@
     <!--External CSS-->
     <h3>Título verde</h3>
 
+     <!--Position Sticky
+    Também faz o elemento ficar fixo na tela
+    Quando volta para a sua posição original, se comporta como relative
+    A posição é onde ele foi inserido no HTML-->
+    <div class="sticky">
+        <span>Eu sou sticky</span>
+    </div>
+
     <!--Ordem do CSS
     Iline tem prioridade sobre o Internal e o External
     Internal tem a mesma prioridade que o External
@@ -296,6 +304,63 @@
     Regra position
     relative, fixed, absolute, stick, etc...
     Valor padrão: static-->
-    <!--Position static-->
+    
+    <!--Position static
+    Não faz nada com o elemento, é o valor padrão
+    Static não é afetado pelas regras top, left, right, bottom
+    Apenas segue o fluxo HTML-->
+    <div class="static">
+        <span>Eu sou estático</span>
+    </div>
+
+    <!--Position relative
+    Tem mais possibilidades que com a static
+    As regras movem o elemento pela tela
+    Ainda segue o fluxo HTML
+    Não utilizada normalmente-->
+    <div class="relative">
+        <span>Eu sou relativo</span>
+    </div>
+    <p>Eu sou um parágrafo</p>
+
+    <!--Position Absolute
+    O elemento pode ser movido por toda a tela
+    Quebra o fluxo HTML
+    Afetada por top, left, right e bottom-->
+    <div class="absolute">
+        <span>Eu sou absoluto!</span>
+    </div>
+    <p>Eu sou um parágrafo</p>
+
+    <!--Relative com Absolute
+    Em um container com posição relative, pode-se controlar
+    melhor a área de ação dos elementos com absolute-->
+    <div class="relative-container">
+        <div class="absolute-1"></div>
+        <div class="absolute-2"></div>
+    </div>
+
+    <!--Position Fixed
+    Elemento pode ser fixado na tela, mesmo após scroll-->
+    <div class="fixed">
+        <span>Estou fixo</span>
+    </div>
+
+    <!--Z index
+    Para evitar colisão entre dois elementos com as
+    mesmas posições
+    Prevalece o elemento com maior valor-->
+    <div class="relative-container">
+        <div class="absolute-3"></div>
+        <div class="absolute-4"></div>
+        <div class="absolute-5"></div>
+    </div>
+
+    <!--Teste avulso div-->
+    <div class="div-1"></div>
+    <div class="div-2"></div>
+    <div class="div-3"></div>
+    <div class="div-4"></div>
+    <div class="div-5"></div>
 </body>
 </html>
