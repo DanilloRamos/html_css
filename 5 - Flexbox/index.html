@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--Flexbox
+    Valor da propriedade display
+    Maneira mais utilizada de acomodar elementos em um container
+    Flex deve ser considerado no elemento pai
+    Elementos filho podem ter regras específicas-->  
+
+    <!--Aplicando Flexbox
+    Consiste em um container e elementos filhos dentro dele-->
+    <div class="flex">
+        <p>Meu </p>
+        <p> primeiro </p>
+        <p> elemento </p>
+        <p> com Flex</p>
+    </div>
+
+    <!--Flex Direction
+    Pode-se mudar o comportamento inline do flex
+    Altera o flex-direciton para column-->
+    <div class="flex-column">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <p>5</p>
+    </div>
+
+    <!--Wrap
+    Serve para colocar x elementos por linha
+    flex-wrap com valor de wrap
+    As linhas respeitam as larguras dos elementos-->
+    <div class="wrap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!--Posicionando Conteúdo
+    método justify content
+    controla como o conteúdo é posicionado no eixo horizontal-->
+    <h2>Center</h2>
+    <div class="center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h2>Space Around</h2>
+    <div class="space-around">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h2>Space Between</h2>
+    <div class="space-between">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h2>End</h2>
+    <div class="end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!--Posicionamento Vertical
+    Align-items para alinhar na vertical-->
+    <h2>Center</h2>
+    <div class="align-center">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h2>End</h2>
+    <div class="flex-end">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <h2>Stretch</h2>
+    <div class="stretch">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>      
+</body>
+</html>
