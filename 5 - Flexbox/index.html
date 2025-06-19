@@ -96,6 +96,87 @@
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
-    </div>      
+    </div>
+    
+    <!--Gap
+    Serve pra colocar espaços entre elementos do flex
+    Valor é especificado em px, por exemplo-->
+    <h1>Gap</h1>
+    <div class="gap">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <!--Order
+    Muda a ordem dos elementos no flex
+    Utilizada nos elementos filhos
+    Não é aplicada no elemento pai-->
+    <h1>Order</h1>
+    <div class="order">
+        <div class="box" id="three">3</div>
+        <div class="box" id="one">1</div>
+        <div class="box" id="two">2</div>
+    </div>
+
+    <!--Grow
+    Pode mudar a proporção de um ou mais elementos filhos
+    Width precisa estar sem valor (auto)-->
+    <h2>Grow</h2>
+    <div class="grow">
+        <div class="box"></div>
+        <div class="box-big"></div>
+        <div class="box"></div>
+    </div>
+
+    <!--Basis
+    Configura a largura base do elemento
+    Grow preenche toda a largura que a basis deixar vazia-->
+    <h2>Basis</h2>
+    <div class="basis">
+        <div class="box"></div>
+        <div class="box big"></div>
+        <div class="box"></div>
+    </div>
+
+    <!--Shrink
+    Oposto do grow
+    Utilizado quando se precisa manter o tamanho dos outros
+    elementos
+    Usado em conjunto com basis e grow
+    O elemento diminui o seu tamanho para manter o dos outros-->
+    <h2>Shrink</h2>
+    <div class="shrink">
+        <div class="box"></div>
+        <div class="box small"></div>
+        <div class="box"></div>
+    </div>
+
+    <!--Flex Shorthand
+    Utilizando apenas um flex, consegue-se configurar
+    grow, shrink e basis, nesta ordem
+    flex:2 1 100px;
+    grow = 2 shrink = 1 e basis = 100px-->
+    <h2>Flex Shorthand</h2>
+    <div class="flex-shorthand">
+        <div class="box"></div>
+        <div class="box sh"></div>
+        <div class="box"></div>
+    </div>
+
+    <!--Auto alinhamento
+    Regra align-self
+    Alinha um elemento diferente dos demais
+    Podemos centralizar um elemento quando os outros
+    seguem a regra do container-->
+    <h2>Auto alinhamento</h2>
+    <div class="auto-alignment">
+        <div class="box"></div>
+        <div class="box different"></div>
+        <div class="box"></div>
+    </div>
 </body>
 </html>

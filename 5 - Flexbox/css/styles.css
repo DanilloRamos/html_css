@@ -94,3 +94,105 @@ body{
 .stretch .box{
     height: auto;
 }
+
+/*Gap*/
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 10px;
+}
+
+.gap .box{
+    width: 32%;
+}
+
+/*order*/
+.order {
+    display: flex;
+}
+
+#one {
+    order: 1;
+}
+
+#two {
+    order: 2;
+}
+
+#three {
+    order: 3;
+}
+
+/*Grow*/
+.grow {
+    display: flex;
+}
+
+.box-big{
+    border: 1px solid red;
+}
+
+.grow .box {
+    flex: 1;
+}
+
+.grow .box-big{
+    flex: 2;
+}
+
+/*basis*/
+.basis {
+    display: flex;
+}
+
+.basis .box{
+    flex-basis: 20px;
+}
+
+.basis .big{
+    flex-grow: 1;
+}
+
+/*Shrink*/
+.shrink {
+    display: flex;
+}
+
+.shrink .box{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small{
+    flex-shrink: 2;
+}
+
+/*Flex Shorthand*/
+.flex-shorthand {
+    display: flex;
+}
+
+.flex-shorthand .box {
+    width: auto;
+    flex: 1 1 50px;
+}
+
+.flex-shorthand .sh {
+    flex: 3 1 400px;
+}
+
+/*auto alignment*/
+.auto-alignment{
+    display: flex;
+    height: 300px;
+    align-items: flex-end;
+    border: 1px solid purple;
+}
+
+.auto-alignment .different{
+    align-self: center;
+}
