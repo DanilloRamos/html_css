@@ -1,22 +1,23 @@
 /*Geral*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica;
 }
 
-.body {
+body {
     background-color: #fafafa;
 }
 
-/*containers*/
-.main-container {
+/*Container*/
+#main-container {
     display: flex;
     margin-top: 30px;
 }
 
-#banner-container, #form-container {
+#banner-container,
+#form-container {
     flex: 1 1 0;
     width: 50%;
 }
@@ -36,7 +37,7 @@
     text-align: center;
 }
 
-/*login form*/
+/*Login form*/
 #form-box {
     background-color: #fff;
     border: 1px solid #dbdbdb;
@@ -44,7 +45,7 @@
     margin-top: 30px;
 }
 
-#logo-insta{
+#logo-insta {
     width: 175px;
     height: 51px;
     margin: 30px auto 12px;
@@ -65,7 +66,7 @@
     margin: 5px auto;
 }
 
-#login-form input[type='submit']{
+#login-form input[type='submit'] {
     background-color: #b2dffc;
     color: #fff;
     margin-top: 15px;
@@ -74,6 +75,7 @@
     font-size: 13px;
     padding: 0;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*Separador*/
@@ -103,7 +105,7 @@
     margin-bottom: 25px;
 }
 
-#facebook-login a{
+#facebook-login a {
     text-decoration: none;
     color: #385185;
     display: flex;
@@ -111,7 +113,7 @@
     justify-content: center;
 }
 
-#facebook-login img{
+#facebook-login img {
     width: 16px;
     height: 16px;
     margin-right: 8px;
@@ -123,21 +125,122 @@
     margin-top: 1px;
 }
 
-/*Esqueci a senha*/
+/*Esqueceu a senha*/
 #forgot-pass {
     margin-bottom: 20px;
     font-size: 12px;
 }
 
-#forgot-pass a{
+#forgot-pass a {
     text-decoration: none;
     color: #373799;
 }
 
-/*Register container*/
-#register-container{
+/*Registro*/
+#register-container {
     background-color: #fff;
     border: 1px solid #dbdbdb;
     width: 350px;
     margin-top: 10px;
+    padding: 25px;
+}
+
+#register-container p {
+    font-size: 14px;
+    color: #262626;
+}
+
+#register-container a {
+    color: #4a95f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Get app*/
+#get-app-container {
+    text-align: center;
+    width: 350px;
+}
+
+#get-app-container p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+#get-app-container a {
+    text-decoration: none;
+}
+
+#get-app-container img {
+    width: 136px;
+    height: 40px;
+}
+
+/*Footer*/
+footer {
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer #footer-links{
+    display: flex;
+    list-style: none;
+}
+
+#footer-links li {
+    margin-right: 10px;
+}
+
+#footer-links a,
+#copyright {
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+#copyright {
+    margin-top: 10px;
+}
+
+/*Mobile*/
+
+@media (max-width: 450px) {
+    body {
+        background-color: #fff;
+    }    
+
+    #banner-container {
+        display: none;
+    }
+
+    #main-container,
+    #form-box {
+        margin-top: 0;
+    }
+
+    #form-container,
+    #form-box,
+    #register-container,
+    #get-app-container {
+        width: 100%;
+        border: none;
+    }
+
+    footer {
+        width: 90%;
+    }
+
+    #footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #footer-links {
+        margin-bottom: 10px;
+    }
 }
