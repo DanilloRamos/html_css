@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>HTML Semântico</title>
+</head>
+<body>
+
+    <!--Tags HTML que dão significado ao elemento
+    Ajuda a estruturar melhor a página
+    Contribui para o SEO da página
+    Exemplo de elementos não semânticos:
+        div, span, etc
+    Exemplo de elementos semânticos:
+        main, section, article, etc
+        
+        Estrutura de uma página semântica
+        
+        Cada seção do site tem uma tag que faz sentido ao elemento:
+        
+        <header> -> cabeçalho do site
+            <nav> -> barra de navegação
+            <section>       
+            <article>           <aside>
+                    <footer> -> rodapé-->
+
+    <!--Tag Section
+    Define uma seção no documento
+    Geralmente, um agrupamento por categorias-->
+    <h1>HTML Semântico</h1>
+    <h2 id="tag-section">Tag Section - A ideia é criar um container</h2>
+    <section class="sec1">
+        <h2>Veja os nossos produtos:</h2>
+        <p>Produto 1</p>
+        <p>Produto 2</p>
+        <p>Produto 3</p>
+    </section>
+    <section class="sec2">
+        <h2>Confira nossos diferenciais:</h2>
+        <ul id="ul-section">
+            <li>Diferencial 1</li>
+            <li>Diferencial 2</li>
+            <li>Diferencial 3</li>
+        </ul>
+    </section>
+    
+    <h2 id="tag-article">Tag Article</h2>
+    <ul id="ul-article">
+        <li>Utilizada para elementos informativos</li>
+        <li>Conteúdo é individual, não fazendo relação com outro
+            elemento ou article
+        </li>
+        <li>Post de blog, comentários, card de produtos</li>
+    </ul>
+
+    <h2>Tag Article na prática:</h2>
+    <section>
+       <h2 id="article">Últimos posts do blog:</h2>
+       <h3>Post sobre alguma coisa</h3>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis natus architecto magnam deleniti assumenda molestias? Aspernatur eos voluptatem esse autem dolorum, perferendis, sequi non ipsa repudiandae eligendi, reprehenderit minima molestiae.</p>
+       <a href="#">Ler conteúdo</a>
+    </section>
+
+    <h2>Tag Header</h2>
+    <p>Utilizada para um conteúdo de introdução ou links de navegação</p>
+    <ul>Possui elementos como:
+        <li>Headings</li>
+        <li>Logo</li>
+        <li>Informação do autor do post/página</li>
+        <li>Pode haver mais de um header na página</li>
+    </ul>
+
+    <h2>Tag Header na prática:</h2>
+    <header>
+        <h2>Nosso site</h2>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                <a href="#">Produtos</a>
+                <a href="#">Contato</a>
+            </li>
+        </ul>
+    </header>
+
+    <h2>Tag Footer</h2>
+    <ul>
+        <li>Rodapé da página</li>
+        <li>Pode ser utilizada em outras tags</li>
+    </ul>
+
+    <h2>Tag Footer na prática:</h2>
+    <footer>
+        <div>
+            <h2>Entre em contato:</h2>
+            <p>Telefone: (xx) xxxx-xxxx</p>
+            <p>E-mail: fulano@fulano.com.br</p>
+            <div>
+                <p>Criado por: fulano</p>
+            </div>
+        </div>
+    </footer>
+
+    <h2>Tag nav</h2>
+    <ul>
+        <li>Utilizar para demarcar blocos de navegação</li>
+        <li>Esperado que haja links dentro dessa tag</li>
+        <li>Nem todo link precisa estar numa nav</li>
+        <li>Geralmente são blocos grandes de link</li>
+    </ul>
+
+    <h2>Tag nav na prática</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Contato</a>          
+    </nav>
+
+    <h2>Tag Aside</h2>
+    <ul>
+        <li>Utilizada para criar conteúdos ao lado do conteúdo principal</li>
+        <li>O conteúdo precisa estar indiretamente relacionado do principal</li>
+        <li>Filtros, ordenação, lista de produtos, etc</li>
+    </ul>
+    <h2>Tag Aside na prática</h2>
+    <aside>
+        <h4>Categorias:</h4>
+        <ul>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">React</a></li>
+            <li><a href="#">Node</a></li>
+        </ul>
+    </aside>
+
+    <h2>Tags figure e figcaption</h2>
+    <ul>
+        <li>São utilizadas em conjuntos</li>
+        <li>Figure é o elemento pai</li>
+        <li>Figcaption coloca uma legenda na imagem</li>
+    </ul>
+
+    <h2>Tags figure e figcaption na prática:</h2>
+    <figure>
+        <img src="img/lambo.jpg" alt="Lamborghinhi">
+        <figcaption>Uma Lamborghinhi amarela</figcaption>
+    </figure>
+
+    <h2>Tag main</h2>
+    <ul>
+        <li>Conteúdo principal da página</li>
+        <li>Não pode-se utilizar mais de uma tag main na página</li>
+        <li>Conteúdo do main deve ser único</li>
+    </ul>
+
+    <h2>Tag main na prática</h2>
+    <main>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt blanditiis iure temporibus alias debitis neque sapiente iusto veritatis culpa aliquam expedita, autem cumque illo! Culpa iste animi neque voluptas hic.
+    </main>
+
+    <h2>Tag mark</h2>
+    <ul>
+        <li>Deve conter um texto dentro</li>
+        <li>Define um conteúdo que precisa estar em evidência</li>
+        <li>Substitui a tag span</li>
+    </ul>
+
+    <h2>Tag mark na prática</h2>
+    <p>Temos nesse texto <mark>um conteúdo importante</mark>, que precisa ser marcado</p>
+</body>
+</html>

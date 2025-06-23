@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Blog Semântico</title>
+</head>
+<body>
+    <!--Cabeçalho do blog semântico-->
+    <header>
+        <nav id="navbar">
+            <!--Container para limitar a largura da navbar-->
+            <div id="navbar-inner">
+                <h2>Blog</h2>
+                <ul id="nav-links">
+                    <li><a id="link" href="#">Home</a></li>
+                    <li><a id="link" href="#">Categorias</a></li>
+                    <li><a id="link" href="#">Contatos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--Container para limitar a largura do conteúdo do blog-->
+    <div class="container">
+        <main id="posts-container">
+            <!--Posts do blog-->
+            <article class="post">
+                <img src="img/f1.jpg" alt="Passeio de barco">
+                <h3 class="title"><a href="#">Algum título</a></h3>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Pariatur error libero enim ullam rem corporis quo, esse maiores? Quam illo placeat iure vel 
+                    adipisci atque provident enim numquam voluptatem est!
+                </p>
+                <p class="author">Por: Danillo Ramos</p>
+                <a href="#">Ler mais</a>
+            </article>
+            <article class="post">
+                <img src="img/f2.jpg" alt="Cachoeira">
+                <h3 class="title"><a href="#">Outro título</a></h3>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Pariatur error libero enim ullam rem corporis quo, esse maiores? Quam illo placeat iure vel 
+                    adipisci atque provident enim numquam voluptatem est!
+                </p>
+                <p class="author">Por: Danillo Ramos</p>
+                <a href="#">Ler mais</a>
+            </article>
+            <article class="post">
+                <img src="img/f3.jpg" alt="Balões">
+                <h3 class="title"><a href="#">Mais um blog post</a></h3>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Pariatur error libero enim ullam rem corporis quo, esse maiores? Quam illo placeat iure vel 
+                    adipisci atque provident enim numquam voluptatem est!
+                </p>
+                <p class="author">Por: Danillo Ramos</p>
+                <a href="#">Ler mais</a>
+            </article>
+        </main>
+        <!--Barra lateral-->
+        <aside id="sidebar">
+            <section id="search-bar">
+                <h4>Busca</h4>
+                <form>
+                    <input type="text" placeholder="Pesquise no blog">
+                    <input type="submit" value="Buscar">
+                </form>
+            </section>
+            <section id="categories">
+                <h4>Categorias</h4>
+                <nav>
+                    <ul><a href="#">Paisagens</a></ul>
+                    <ul><a href="#">Aventuras</a></ul>
+                    <ul><a href="#">Viagens Longas</a></ul>
+                    <ul><a href="#">Florestas</a></ul>
+                    <ul><a href="#">Cachoeiras</a></ul>
+                </nav>
+            </section>
+            <section id="tags">
+                <h4>Tags</h4>
+                <div id="tags-container">
+                    <a href="#">Lifestyle</a>
+                    <a href="#">Viagem</a>
+                    <a href="#">Barco</a>
+                    <a href="#">Trilha</a>
+                    <a href="#">Rafting</a>
+                    <a href="#">Parapente</a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <!--Rodapé da página-->
+    <footer id="footer">
+        <h2>Blog</h2>
+        <p>Os melhores registros de aventura</p>
+        <p>2025 &copy; Danillo Siqueira Ramos</p>
+    </footer>
+</body>
+</html>
