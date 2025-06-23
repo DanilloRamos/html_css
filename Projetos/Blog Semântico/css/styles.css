@@ -33,6 +33,11 @@ a:hover {
 
 #navbar #link {
     color: #fff;
+    transition: .4s;
+}
+
+#navbar #link:hover{
+    color: #37a1f7;
 }
 
 #navbar-inner {
