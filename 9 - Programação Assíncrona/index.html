@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Programação Assíncrona</title>
+</head>
+<body>
+   <h1>Programação Assíncrona</h1>
+   <h2></h2>
+   <ul>
+   <li>Precisa ser utilizada <mark>quando as respostas não são obtidas de forma imediata no programa</mark></li>
+   <li>Por exemplo, chamadas a uma API são assíncronas</li>
+   <li>Nesse caso, <mark>as execuções não ocorrem em formato de fila</mark>, e sim no seu tempo</li>
+   </ul>
+
+   <h2>Instrução setTimeout</h2>
+   <ul>
+    <li>Faz parte da programação assíncrona</li>
+    <li>Uma ação é estabelecida para ser executada após certo tempo</li>
+    <li>O código continua rodando e depois de um tempo, executa a função</li>
+   </ul>
+
+    <h2>Instrução setInterval</h2>
+   <ul>
+    <li>Semelhante à setTimeout, ou seja, é executada após um tempo</li>
+    <li>Porém, não para de ser executada, sua chamada é definida pelo tempo de espera na execução</li>
+    <li>É como um loop infinito, com execução de tempo controlada</li>
+   </ul>
+
+    <h2>Promises</h2>
+   <ul>
+    <li>São execuções assíncronas</li>
+    <li>Promessa de um valor que pode chegar em um ponto futuro</li>
+    <li>Utiliza-se o objeto promise e alguns métodos auxiliares</li>
+   </ul>
+
+   <h3>Tratando erros nas promises</h3>
+   <ul>
+    <li>Uma promise pode conter um erro, ou podemos receber um erro</li>
+    <li>Utiliza-se a função catch para isso, para capturar e exibir o erro</li>
+   </ul>
+
+   <h3>Rejeitando Promises</h3>
+   <ul>
+    <li>Diferente do erro, ocorre quando decide-se rejeitar uma promise</li>
+    <li>Utiliza-se o método reject</li>
+   </ul>
+
+   <h3>Resolvendo várias promises</h3>
+   <ul>
+    <li>Método all para executar várias promises</li>
+    <li>JS verifica e retorna os valores finais</li>
+   </ul>
+
+   <h2>Async Functions</h2>
+   <ul>
+    <li>Funções que retornam promises</li>
+    <li>Há a possibilidade de receber o resultado delas depois, além da utilização dos métodos da promise</li>
+   </ul>
+
+   <h2>Assertions</h2>
+   <h3>Instrução await</h3>
+   <ul>
+    <li>Serve para aguardar o resultado de uma async function</li>
+    <li>Torna mais simples lidar com este tipo de função, não precisando trabalhar diretamente com promise</li>
+   </ul>
+
+   <h2>Generators</h2>
+   <ul>
+    <li>Funcionam de forma semelhante às promises</li>
+    <li>Ações podem ser pausadas e continuadas</li>
+    <li>Novos operadores: function* e yield</li>
+   </ul>
+</body>
+</html>
