@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--Global Instance-->
+    <!--<script src="js/global.js"></script>-->
+    <!--Custom Instance-->
+    <script src="js/custom.js"></script>
+    <script src="js/interceptors.js"></script>
+    <script src="js/script.js" defer></script>
+    <title>Axios</title>
+</head>
+<body>
+        <h1>O que é o Axios?</h1>
+        <ul>
+            <li>Biblioteca JS para requisições HTTP</li>
+            <li>É promise based, retorna promessas das funções</li>
+            <li>Torna muito mais simples o trabalho com APIs e requisições assíncronas</li>
+            <li>Perdeu muita notoriedade para o recurso fetch do JS</li>
+        </ul>
+
+        <h1>Instalando o Axios</h1>
+        <ul>
+            <li>Basta copiar um link de script externo para o projeto</li>
+            <li>link da documentação: <a href="https://axios-http.com/">clique aqui</a></li>
+            <li>Em projetos com bibliotecas e frameworks, utiliza-se npm para instalar o Axios</li>
+        </ul>
+
+        <h1>Primeiro Request</h1>
+        <ul>
+            <li>Para fazer uma requisição, pode-se utilizar o método GET</li>
+            <li>É recomendado utilizar um try catch, para identificar possíveis erros - boa prática</li>
+            <li>Como o axios é baseado em promises, pode-se utilizar as async functions</li>
+        </ul>
+
+        <h1>Exibindo dados na tela</h1>
+        <ul>
+            <li>Após um request, é comum exibir os dados na tela</li>
+            <li>Isso é feito juntando a reposta da chamada com os conhecimentos em DOM</li>
+            <li>Cria-se elementos baseado no que veio na requisição</li>
+        </ul>
+
+        <div id="user-container">
+
+        </div>
+
+        <h1>Configurando headers</h1>
+        <ul>
+            <li>Os headers são configurados no momento da requisição</li>
+            <li>Podem ser adicionados parâmetros extras, como por exemplo, tipos de dados desejados</li>
+        </ul>
+
+        <h1>Requisição de POST</h1>
+        <ul>
+            <li>Para enviar dados, utiliza-se o método POST</li>
+            <li>É necessário configurar a propriedade body com os dados a serem enviados</li>
+        </ul>
+
+        <h2>Inserindo dados (Exemplo)</h2>
+        <h3>Insira um novo Post:</h3>
+        <form id="post-form">
+            <div>
+                <input type="text" id="title" placeholder="Digite o título ">
+            </div>
+            <div>
+                <textarea id="body"></textarea>
+            </div>
+            <input type="submit" value="Criar Post">
+        </form>
+
+        <h1>Global Instance do Axios</h1>
+        <ul>
+            <li>As configurações do Axios podem ser alteradas diretamente</li>
+            <li>Gera uma facilidade de trabalhar com os mesmos parâmetros em todas as requisições</li>
+            <li>Se os headers são configurados na global, não é necessário configurar nas requisições</li>
+        </ul>
+
+        <h1>Custom Instance</h1>
+        <ul>
+            <li>Semelhante à Global Instance</li>
+            <li>Existem outras propriedades que é possível configurar</li>
+            <li>Uma delas é a baseurl</li>
+            <li>É utilizada para personalização do projeto</li>
+            <li>Não é recomendado utilizar as duas instances juntas</li>
+        </ul>
+
+        <h1>Interceptors</h1>
+        <ul>
+            <li>São como middlewares</li>
+            <li>A requisição pode ser inteceptada na requisição e na resposta, inserindo algum código nas duas ações</li>
+        </ul>
+</body>
+</html>
