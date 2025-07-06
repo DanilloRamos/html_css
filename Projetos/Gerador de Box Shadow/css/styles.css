@@ -102,4 +102,49 @@ h2 {
     margin: 0 auto;
     border: 2px solid #e9d60a;
     padding: 1rem;
+    transition: .4s;
+    cursor: pointer;
 }
+
+/*Novas Funcionalidades*/
+#color-value {
+    min-width: 100px;
+}
+
+#inset {
+    align-self: start;
+    height: 20px;
+    width: 20px;
+}
+
+#rules-area:hover {
+    background-color: #dfdfdf;
+}
+
+#copy-instructions {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/*Responsividade*/
+@media(max-width:425px){
+    #controls-container,
+    #preview{
+        padding: 1rem 2rem;
+    }
+
+    #box-shadow-generator {
+        flex-direction: column;
+    }
+
+    #box {
+        width: 60%;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    #generated-rule {
+        margin-top: 2rem;
+    }
+}
+
