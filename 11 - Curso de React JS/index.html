@@ -37,5 +37,103 @@
         <li>src/index.js: arquivo de inicialização da aplicação</li>
         <li>src/App.js: componente principal inicial - pode ser modificado</li>
     </ul>
+
+    <h2>Criando o primeiro componente</h2>
+    <ul>
+        <li>Se encontram em uma pasta chamada component</li>
+        <li>Nomeados em camel case</li>
+        <li>A utilização da extensão .jsx facilita a formatação pelos editores</li>
+        <li>Dentro do componente, é preciso criar e exportar uma função</li>
+    </ul>
+
+    <h2>Importando componentes</h2>
+    <ul>
+        <li>Para utilizar e reutilizar um component, é necessário importar</li>
+        <li>Sintaxe: import X from ./components/X.jsx</li>
+        <li>Para inserir o componente dentro de outro, utiliza-se a sintaxe de tag HTML, com o nome do componente:</li>
+        <li>"< FisrtComponent/ >"</li>
+    </ul>
+
+    <h2>JSX</h2>
+    <ul>
+        <li>JSX é o HTML do React</li>
+        <li>Há alguma diferenças do HTML, como por exemplo class = className</li>
+        <li>Podemos escrever JavaScript dentro do JSX</li>
+        <li>JSX pode ter apenas um elemento pai</li>
+    </ul>
+
+    <h2>Comentários no componente</h2>
+    <ul>
+        <li>Há duas formas de inserir comentários em React</li>
+        <li>Sintaxe do JS dentro e fora das funções, com //comentário</li>
+        <li>JSX com {/*Comentário*/} </li>
+        <li>Chaves são necessárias para executar qualquer instrução de JS</li>
+    </ul>
+
+    <h2>Template Expressions</h2>
+    <ul>
+        <li>Recurso que permite a execução de JS no JSX</li>
+        <li>Variáveis podem ser inseridas</li>
+        <li>Sintaxe: {a+b}</li>
+        <li>Tudo que vai entre chaves é entedido e executado como JS</li>
+    </ul>
+
+    <h2>Hierarquia de Componentes</h2>
+    <ul>
+        <li>Componentes podem ser reutilizados em outros</li>
+        <li>Uma hierarquia pode ser montada, onde um é pai do outro</li>
+        <li>Ao importar um componente pai, todos os outros vêm junto</li>
+    </ul>
+
+    <h2>Evento de click</h2>
+    <ul>
+        <li>React possui os mesmos eventos que JS, porém mais simples</li>
+        <li>Por exemplo, onClick dispara um evento que ativa uma função ao clicar em um elemento</li>
+    </ul>
+
+    <h2>Evento com função</h2>
+    <ul>
+        <li>Quando há lógicas complexas, é mais indicado criar uma função para o evento</li>
+        <li>Ajuda a separar as responsabilidades, facilita a manutenção</li>
+    </ul>
+
+    <h2>Funções de renderização</h2>
+    <ul>
+        <li>Funções que retornam JSX podem ser criadas</li>
+        <li>Podem ser utilizadas para uma renderização condicional, fazendo com que o JSX varie dependendo da operação</li>
+    </ul>
+
+    <h2>Aprofundando em  React - Inserindo imagens</h2>
+    <ul>
+        <li>As imagens podem ficar na pasta public</li>
+        <li>Podem ser utilizadas diretamente no projeto</li>
+    </ul>
+
+    <h2>Importando imagens</h2>
+    <ul>
+        <li>Outro local comum de colocar imagens é na pasta assets</li>
+        <li>Nessa pasta, a imagem precisa ser importada, como um componente</li>
+        <li>As duas abordagens são muito utilizadas</li>
+    </ul>
+
+    <h2>Hooks</h2>
+    <ul>
+        <li>Recursos no React que possuem diversas funções</li>
+        <li>Podem ser criados</li>
+        <li>Ex.: Guardar e alterar o estado de algum dado</li>
+        <li>Precisam ser importados</li>
+        <li>Sempre começam com a palavra use</li>
+        <li>Alguns bem utilizados são useState e useEffect</li>
+        <li>Os hooks criados são chamados custom hooks</li>
+        <li>Toda aplicação usa pelo menos um hook</li>
+    </ul>
+
+    <h2>Hook useState</h2>
+    <ul>
+        <li>Um dos mais utilizados</li>
+        <li>Pode gerenciar o estados de um ou mais dados, como se fosse um getter/setter</li>
+        <li>Utiliza-se esse hook pois as variáveis não funcionam como esperado, não re-renderizam o componente</li>
+        <li>Para guardar um dado, utiliza-se setNomeDado</li>
+    </ul>
 </body>
 </html>
