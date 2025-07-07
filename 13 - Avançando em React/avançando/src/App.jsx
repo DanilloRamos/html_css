@@ -6,6 +6,12 @@ import night from "./assets/night.jpg"
 //useState
 import Data from './components/data'
 
+//Renderização de lista
+import ListRender from "./components/ListRender"
+
+//Render condicional
+import ConditionalRender from './components/ConditionalRender'
+
 function App() {
 
   return (
@@ -17,6 +23,10 @@ function App() {
       <img src={night} alt="Outra imagem" />
       {/*useState */}
       <Data />
+      {/*Render de lista*/}
+      <ListRender />
+      {/*Render Condicional */}
+      <ConditionalRender/>
     </div>
   )
 }

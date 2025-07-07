@@ -135,5 +135,38 @@
         <li>Utiliza-se esse hook pois as variáveis não funcionam como esperado, não re-renderizam o componente</li>
         <li>Para guardar um dado, utiliza-se setNomeDado</li>
     </ul>
+
+    <h2>Renderização de lista</h2>
+    <ul>
+        <li>Dados do tipo array são comuns em aplicações</li>
+        <li>Geralmente, é recebido um array de objetos e precisa iterar nele e exibir os elementos</li>
+        <li>Método map fará a iteração</li>
+        <li>É possível inserir JSX na execução</li>
+    </ul>
+
+    <h2>Propriedade key</h2>
+    <ul>
+        <li>Iterar uma lista sem a propriedade key gera um alerta</li>
+        <li>React precisa de uma chave única para cada elemento</li>
+        <li>Isto serve para ajudar a renderização do componente</li>
+        <li>React utiliza para manipulação dos itens</li>
+    </ul>
+
+    <h2>Previous State</h2>
+    <ul>
+        <li>É um recurso do hook useState</li>
+        <li>Pode-se pegar o valor original dos dados e fazer alguma alteração</li>
+        <li>Muito utilizado em listas, pois modifica um ou vários itens específicos</li>
+        <li>O primeiro argumento do set é sempre o previous state</li>
+    </ul>
+
+    <h2>Renderização condicional</h2>
+    <ul>
+        <li>É quando parte do template é exibido por meio de uma condição</li>
+        <li>É um if no JSX</li>
+        <li>Ex de utilização: quando o usuário está autenticado ou não</li>
+        <li>A estrutura pode conter um else, igual à do if ternário</li>
+        <li>condição ? execução1 : execução2</li>
+    </ul>
 </body>
 </html>
