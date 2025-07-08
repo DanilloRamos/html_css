@@ -168,5 +168,59 @@
         <li>A estrutura pode conter um else, igual à do if ternário</li>
         <li>condição ? execução1 : execução2</li>
     </ul>
+
+    <h2>Props</h2>
+    <ul>
+        <li>Recurso fundamental do React</li>
+        <li>Permite a passagem de dados de um componente pai para o componente filho</li>
+        <li>As props vêm em um  objeto no argumento da função do componente</li>
+    </ul>
+
+    <h2>Desestruturando props</h2>
+    <ul>
+        <li>Componentes geralmente têm mais de uma props</li>
+        <li>Pode-se desestruturar no parâmetro da função do componente, para facilitar o uso</li>
+        <li>Sintaxe: MyComponent({name, age})</li>
+    </ul>
+
+    <h2>Reutilização de componentes</h2>
+    <ul>
+        <li>Com o auxílio da sprops, reutilizar componentes faz mais sentido</li>
+        <li>Torna o código padronizado, e facilita a manutenção</li>
+    </ul>
+
+    <h2>Reutilização de componentes com loop</h2>
+    <ul>
+        <li>Em arrays com muitos itens, é correto utilizar um loop para percorrer os itens</li>
+    </ul>
+
+    <h2>Fragments</h2>
+    <ul>
+        <li>São interessantes para quando há mais de um pai no componente</li>
+        <li>Também quando não se quer incluir HTML desnecessário no elemento pai, não alterando sua estrutura</li>
+        <li>Sintaxe: "<>" "</>" </li>
+    </ul>
+
+    <h2>Children Prop</h2>
+    <ul>
+        <li>Utilizado quando um componente precisa ter JSX dentro dele</li>
+        <li>JSX vem do componente pai</li>
+        <li>Componente age como um container, abrigando o JSX</li>
+        <li>A children entra como uma prop do componente</li>
+    </ul>
+
+    <h2>Função em prop</h2>
+    <ul>
+        <li>Pode-se passar funções por meio de props</li>
+        <li>Cria a função no elemento pai e envia como prop</li>
+        <li>No filho, pode-se utilizar para algum evento</li>
+    </ul>
+
+    <h2>State lift (Elevação de state)</h2>
+    <ul>
+        <li>Quando um valor é levado do componente filho ao componente pai</li>
+        <li>Geralmente, um componente usa o state e o outro altera</li>
+        <li>Componente pai gerencia os valores e passa as alterações aos filhos</li>
+    </ul>
 </body>
 </html>
