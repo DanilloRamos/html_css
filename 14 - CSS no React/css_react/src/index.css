@@ -11,3 +11,10 @@ body {
 h1 {
   color: red;
 }
+
+/*Classe dinâmica*/
+.red-title {
+  font-size: 50px;
+  color: red;
+  background-color: #000;
+}
