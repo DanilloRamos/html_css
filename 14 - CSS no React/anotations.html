@@ -36,3 +36,59 @@
     <li>Nome do arquivi: Component.module.css</li>
     <li>Necessário fazer importação</li>
 </ul>
+
+<h2>Formulários no React</h2>
+<ul>
+    <li>Em React, é utilizada a tag form</li>
+    <li>As labels tem o nome alterado para htmlFor, que conta com o nome do input</li>
+    <li>Não é utilizado o action, o envio deve ser feito pelo JS de forma assíncrona</li>
+</ul>
+
+<h2>Label envolvendo input</h2>
+<ul>
+    <li>Um padrão muito utilizado é a label ser pai do input</li>
+    <li>Atributo for é opcional</li>
+    <li>Simplifica o HTML e mantém a semântica</li>
+</ul>
+
+<h2>Manipulando valores</h2>
+<ul>
+    <li>Para manipular valores de formulários, utiliza-se o hook useState</li>
+    <li>O valor é armazenado com o set</li>
+    <li>O evento que vai nos inputs é o onChange, no qual tem a função de alteração</li>
+    <li>Quando há diversos inputs, cria-se uma função inline dentro do onChange</li>
+</ul>
+
+<h2>Envio de formulário</h2>
+<ul>
+    <li>Evento onSubmit</li>
+    <li>Funções podem ser executadas no evento</li>
+    <li>O envio do formulário tem que ser parado com preventDefault</li>
+    <li>As validações são feitas nesta função</li>
+</ul>
+
+<h2>Controlled Inputs</h2>
+<ul>
+    <li>Valores pré-existentes podem ser atribuídos aos formulários</li>
+    <li>Pode-se igualar ao atributo value do state</li>
+    <li>Se não houver valor, pode haver uma lógica que entrega uma string vazia</li>
+</ul>
+
+<h2>Limpando formulários</h2>
+<ul>
+    <li>Basta atribuir valores vazios aos states</li>
+</ul>
+
+<h2>Textarea</h2>
+<ul>
+    <li>Pode ser aplicado como um input normal de texto</li>
+    <li>Atributo value pode ser utilizado para mudar o texto inicial</li>
+    <li>Com o onChange, muda-se o state</li>
+</ul>
+
+<h2>Input Select</h2>
+<ul>
+    <li>Muito semelhante aos outros inputs</li>
+    <li>onChange pode mudar o valor do state</li>
+    <li>Value deve ser atribuído a uma das options</li>
+</ul>
