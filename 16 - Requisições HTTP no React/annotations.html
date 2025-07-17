@@ -13,5 +13,41 @@
         <li>Simula uma API, permitindo fazer requisições HTTP</li>
         <li>Não necessita de um back-end</li>
     </ul>
+
+    <h2>Importância do useEffect</h2>
+    <ul>
+        <li>Faz com que seja possível controlar uma ação</li>
+        <li>O componente é re-renderizado a cada mudança</li>
+        <li>useEffect possui um array de dependências que coordena, o que permite a execução do código</li>
+        <li>Muito comum nas requisições HTTP<li>
+    </ul>
+
+    <h2>Resgatando dados com React</h2>
+    <ul>
+        <li>useState é usado para salvar os dados</li>
+        <li>useEffect chama a API apenas quando necessário</li>
+        <li>Axios ou Fetch API para realizar a requisição dos dados</li>
+    </ul>
+
+    <h2>Adicionando dados</h2>
+    <ul>
+        <li>Inputs preenchem os useStates</li>
+        <li>Os dados são reunidos em uma função, disparada no evento onSubmit</li>
+        <li>Verbo HTTP: Post</li>
+        <li>Processo é parecido com o resgate de dados</li>
+    </ul>
+
+    <h2>Carregamento dinâmico</h2>
+    <ul>
+        <li>Se a requisição obter êxito, um novo item é adicionado ao front da lista<li>
+        <li>Não é preciso fazer outra requisição HTTP</li>
+    </ul>
+
+    <h2>Custom hook para o fetch</h2>
+    <ul>
+        <li>É normal separar as responsabilidades nos componentes</li>
+        <li>Pode-se criar o próprio hook para isso, chamado de custom hook</li>
+        <li>São guardados na pasta hooks</li>
+    </ul>
 </body>
 </html>
