@@ -10,8 +10,7 @@ function App() {
   const [products, setProducts] = useState([])
 
   //custom hook
-  const { data: items } = useFetch(url)
-
+  const {data: items} = useFetch(url)
 
   // useEffect(() => {
   //   async function getData() {
@@ -20,7 +19,6 @@ function App() {
 
   //     setProducts(data)
   //   }
-
   //   getData()
   // }, [])
 
@@ -32,44 +30,46 @@ function App() {
     e.preventDefault()
 
     const product = {
-      name, 
+      name,
       price,
     }
+
     const res = await fetch(url, {
-      method: "POST",
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type":"application/json"
       },
-      body: JSON.stringify(product),
+      body: JSON.stringify(product)
     })
 
-    
-    //Carregamento dinâmico
+    //carregamento dinâmico
     const addedProduct = await res.json()
+
     setProducts((prevProducts) => [...prevProducts, addedProduct])
   }
 
   return (
     <div className="App">
       <h1>HTTP em React</h1>
-      {/*Resgate de dados*/}
+      {/*Resgate de dados */}
       <ul>
-        {items && items.map((product) => {
+        {items && items.map((product) => (
           <li key={product.id}>{product.name} - R$ {product.price}</li>
-        })}
+        ))}
       </ul>
+
       {/*Enviando dados*/}
       <div className="add-product">
         <form onSubmit={handleSubmit}>
           <label>
-            <span>Nome: </span>
+            <span>Nome</span>
             <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
           </label>
           <label>
-            <span>Preço: </span>
+            <span>Preço</span>
             <input type="text" value={price} onChange={(e) => setPrice(e.target.value)}/>
           </label>
-          <input type="submit" value={Enviar}/>
+          <input type="submit" value="Enviar" />
         </form>
       </div>
     </div>
