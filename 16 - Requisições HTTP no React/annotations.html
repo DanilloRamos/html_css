@@ -49,5 +49,33 @@
         <li>Pode-se criar o próprio hook para isso, chamado de custom hook</li>
         <li>São guardados na pasta hooks</li>
     </ul>
+
+    <h2>Refatorando o POST</h2>
+    <ul>
+        <li>É possível reutilizar o hook para fazer o POST</li>
+        <li>Um useEffect é criado para mapear uma outra mudança de estilo</li>
+        <li>Nem sempre reutilizar um hook para várias ações é a melhor estratégia</li>
+    </ul>
+
+    <h2>Estado de loading</h2>
+    <ul>
+        <li>É normal que a resposta demore um pouco a chegar</li>
+        <li>Nesse intervalo, será inserido um elemento de loading</li>
+        <li>É possível inserir um hook nessa abordagem</li>
+    </ul>
+
+    <h2>Loading no POST</h2>
+    <ul>
+        <li>Ações podem ser bloqueadas enquanto a requisição ocorre</li>
+        <li>Evita a duplicação de eventos</li>
+        <li>Um POST ocorrendo pode ser identificado, então o evento de envio da informação é bloqueado</li>
+    </ul>
+
+    <h2>Tratando erros</h2>
+    <ul>
+        <li>Erros são tratados com blocos try catch</li>
+        <li>É possível pegar os dados do erro e exibir na tela</li>
+        <li>É possível prever erros em todos os cenários</li>
+    </ul>
 </body>
 </html>
