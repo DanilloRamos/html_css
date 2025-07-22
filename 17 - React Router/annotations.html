@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Router</title>
+</head>
+<body>
+    <h1>React Router</h1>    
+    <ul>
+        <li>Pacote mais utilizado para criar rotas em uma aplicação React</li>
+        <li>Cada rota é uma página</li>
+        <li>Precisa ser instalado e configurado no projeto</li>
+        <li>Possui diversas funcionalidades, como redirecionamento, rotas aninhadas, 404, etc</li>
+    </ul>
+
+    <h1>Configurando o React Router</h1>
+    <ul>
+        <li>Utiliza-se principalmente o arquivo main.jsx</li>
+        <li>Os componentes createBrowserRouter, RouterProvider e Route são importados</li>
+        <li>Serão utilizados na configuração e ao longo do projeto</li>
+    </ul>
+
+    <h1>Configurando página de erro 404</h1>
+    <ul>
+        <li>Componente ErrorPage</li>
+        <li>Hook useRouteError para obter as informações de erro</li>
+        <li>Propriedade errorElement é configurada no main.jsx</li>
+    </ul>
+
+    <h1>Criando componente base</h1>
+    <ul>
+        <li>Outlet é um componente que permite reaproveitar a estrutura das páginas</li>
+        <li>Um cmponente base pode ser sua estrutura, e todas as páginas ficam dentro dele</li>
+        <li>As configurações são feitas na propriedade children, dentro de main.jsx</li>
+    </ul>
+
+    <h1>Links entre páginas</h1>
+    <ul>
+        <li>Utiliza-se o componente link</li>
+        <li>Configurado com a propriedade <mark>to</mark>, que leva à URL de destino. Isso permite uma mudança de páginas sem reload</li>
+    </ul>
+
+    <h1>Carregando dados</h1>
+    <ul>
+        <li>O hook useFetch é utilizado para exibir dados na home</li>
+    </ul>
+
+    <h1>Rotas dinâmicas</h1>
+    <ul>
+        <li>Recurso de carregar rotas individuais</li>
+        <li>A URL de cada item irá variar, de acordo com alguma característica</li>
+        <li>Formato do path: /product/:id</li>
+    </ul>
+
+    <h1>Rotas aninhadas</h1>
+    <ul>
+        <li>Nested routes, são estruturas mais complexas</li>
+        <li>Combinam-se as rotas dinâmicas para serem criadas estruturas maiores de acesso</li>
+        <li>Ex.: /products/:id/info</li>
+    </ul>
+
+    <h1>Link ativo</h1>
+    <ul>
+        <li>Componente de NavLink ao invés de Link, para identificar links ativos</li>
+        <li>Propriedade isActive para aplicar estilos diferenciados para este link</li>
+    </ul>
+</body>
+</html>
