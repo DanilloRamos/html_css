@@ -6,7 +6,8 @@ import App from './App.jsx'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route
+  Route,
+  Navigate
 } from 'react-router-dom'
 
 //configurando router
@@ -23,6 +24,9 @@ import Product from './routes/Product.jsx'
 
 //nested routes
 import Info from './routes/Info.jsx'
+
+//search
+import Search from './routes/Search.jsx'
 
 const router = createBrowserRouter([
   {
@@ -48,6 +52,16 @@ const router = createBrowserRouter([
       {
         path:'products/:id/info',
         element: <Info/>
+      },
+      //search
+      {
+        path:'search',
+        element: <Search/>
+      },
+      //redirect
+      {
+        path: 'teste',
+        element: <Navigate to='/'/>
       }
     ]
   },
