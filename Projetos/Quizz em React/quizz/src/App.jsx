@@ -1,11 +1,25 @@
 import './App.css'
+import { useContext, useEffect } from 'react'
+import { QuizzContext } from './context/quizz'
+
 import Welcome from './components/Welcome'
+import Question from './components/Question'
+import GameOver from './components/GameOver'
 
 function App() {
+  const [quizzState, dispatch] = useContext(QuizzContext)
+
+  useEffect(() => {
+    //embaralhar as perguntas
+    dispatch({type: "REORDER_QUESTIONS"})
+  }, [])
+
   return (
     <div className="App">
       <h1>Quizz de Programação</h1>
-      <Welcome />
+      {quizzState.gameStage === "Start" && <Welcome />}
+      {quizzState.gameStage === 'Playing' && <Question />}
+      {quizzState.gameStage === 'End' && <GameOver/>}
     </div>
   )
 }
