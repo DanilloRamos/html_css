@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Context API</title>
+</head>
+<body>
+    <h1>O que é Context API</h1>    
+    <ul>
+        <li>Recurso do React que facilita o compartilhamento de dados entre componentes</li>
+        <li>Quando há a necessidade de dados globais, usa-se o context</li>
+        <li>Quando há muitas idas e vindas de props, também se usa o context</li>
+        <li>O Context precisa ser importado onde for ser utilizado</li>
+        <li>Convenção para o nome do arquivo: AlgumContext.jsx</li>
+    </ul>
+
+    <h1>Criando o Provider</h1>
+    <ul>
+        <li>Provider vai delimitar o escopo do contexto</li>
+        <li>Provider deve encapsular os componentes que precisam do context</li>
+        <li>Colocado em main.jsx</li>
+        <li>Possui a prop children, para ser inserido dentro</li>
+    </ul>
+
+    <h1>Refatorando contexto com Hook</h1>
+    <ul>
+        <li>Um hook pode ser criado e o contexto trabalhado nele</li>
+        <li>O useContext é concentrado em um só local, que será no hook</li>
+        <li>Há um intervalo para uma possível validação na alteração do contexto</li>
+    </ul>
+
+    <h1>Contexto mais complexo</h1>
+    <ul>
+        <li> Contextos mais complexos podem necessitar de variações de comportamento</li>
+        <li>Para esse cenário, o mais indicado é utilizar o hook useReducer. Funciona como um useState, porém possui mais possibilidades</li>
+        <li>Para alterar o contexto, usa-se a função dispatch</li>
+        <li>Também estará no useReducer</li>
+        <li>É utilizado o switch</li>
+    </ul>
+</body>
+</html>
