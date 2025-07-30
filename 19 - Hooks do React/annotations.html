@@ -25,6 +25,46 @@
         <li>Tem função semelhante ao useState</li>
         <li>Diferente do useState, uma função pode ser executada na manipulação de conteúdos</li>
         <li>O useReducer recebe um valor para gerenciar e uma função para alterar o valor recebido</li>
+        <li>Reducer geralmente possui operações mais complexas, utilizando um switch</li>
+    </ul>
+
+    <h2>useEffect</h2>
+    <ul>
+        <li>Utilizado em várias situações, e está no ranking dos mais utilizados no React</li>
+        <li>Por meio dele, pode-se fazer alterações nos elementos ou requisições HTTP</li>
+        <li>A grande vantagem é que essas ações podem ser controladas</li>
+        <li>O array de dependências possui os itens a serem monitorados</li>
+        <li>Se a ação precisar ser executada apenas uma vez, pode ser feito com um array de dependências vazio</li>
+        <li>A execução do useEffect pode ser condicionado colocando algo no array de dependências</li>
+        <li>Sempre que o dado for modificado, o useEffect executa mais uma vez, permitindo a reutilização de forma controlada</li>
+    </ul>
+
+    <h2>Limpeza de useEffect</h2>
+    <ul>
+        <li>Algumas ações precisam ser limpas. Para isso, a técnica de cleanup é utilizada</li>
+        <li>Para resolver isso, basta finalizar a ação no useEffect com um return</li>
+    </ul>
+
+    <h2>useContext</h2>
+    <ul>
+        <li>Hook utilizado para consumir um context, da context API</li>
+        <li>O contexto e o provider precisam ser criados, seus conteúdos são envolvidos e o uso do hook é feito onde for necessário</li>
+    </ul>
+
+    <h2>useRef</h2>
+    <ul>
+        <li>Pode ser utilizado com o useState, gerenciando valores</li>
+        <li>É um objeto, seu valor está na propriedade current</li>
+        <li>Não re-renderiza o componente ao ser utilizado</li>
+        <li>Pode ser utilizado para selecionar elementos no JSX e fazer manipulação no DOM, ou aplicar eventos como o focus</li>
+    </ul>
+
+    <h2>useCallback</h2>
+    <ul>
+        <li>Basicamente, memoriza uma função, fazendo com que ela não seja reconstruída a cada renderização</li>
+        <li>Pode ser utilizado em duas situações:</li>
+        <li>Primeiro caso: prezando pela performance, uma função muito complexa pode ser criada uma só vez</li>
+        <li>Segundo caso: React alerta que a função deveria estar no callback</li>
     </ul>
 </head>
 <body>
